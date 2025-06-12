@@ -1,0 +1,54 @@
+.post-status-container {
+    padding: 20px;
+}
+
+.post-status-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.platform-status {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.platform-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.platform-item span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.platform-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.platform-item button:hover {
+    background-color: #218838;
+}
+
+.status-text {
+    font-style: italic;
+    color: #666;
+}
+
+.status-text.success {
+    color: #28a745; /* Green color for success */
+    font-weight: bold;
+}

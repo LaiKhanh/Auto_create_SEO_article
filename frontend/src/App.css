@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-main {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các section xuống dòng trên màn hình nhỏ */
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các section */
+    padding: 20px;
+    flex-grow: 1; /* Cho phép main chiếm hết không gian còn lại */
+}
+
+.App-main > section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Cho phép các section co giãn */
+    min-width: 300px; /* Đảm bảo section không quá nhỏ */
+}
+
+.App-footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    margin-top: auto; /* Đẩy footer xuống cuối */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .App-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .App-main > section {
+        width: 90%; /* Chiếm phần lớn chiều rộng trên mobile */
+    }
+}

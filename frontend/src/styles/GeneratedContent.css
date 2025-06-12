@@ -1,0 +1,20 @@
+.generated-content-container {
+    padding: 20px;
+}
+
+.generated-content-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 1.5;
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+    min-height: 200px;
+    box-sizing: border-box;
+}
